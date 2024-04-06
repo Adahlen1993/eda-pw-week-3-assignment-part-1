@@ -68,8 +68,10 @@ console.log('Added an animal to end,', animalArray);
 //      a dessert that you love.
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
-
-
+let dessert = 'cake';
+favoriteFoods.push(dessert);
+console.log('added a dessert:', favoriteFoods[favoriteFoods.length - 1]);
+console.log(favoriteFoods.indexOf('cake'));
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
 animalArray.unshift(animalToUnshift);
@@ -78,7 +80,8 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
-
+let entree = 'Cheeseburger';
+favoriteFoods.unshift(entree);
 
 // Example: Remove the last animal by using the Array.pop method.
 let removedAnimal = animalArray.pop();
@@ -95,6 +98,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)
 
+let lastColor = colors.pop();
+console.log('Removed the last color', lastColor);
+console.log('The colors are now', colors);
 
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
@@ -105,7 +111,9 @@ console.log('The animals are now', animalArray);
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
 
-
+let firstColor = colors.shift();
+console.log('Removed the first color', firstColor);
+console.log('The colors are now', colors);
 
 
 // STRETCH GOALS:
